@@ -1,0 +1,21 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[build.environment]
+  NODE_VERSION = "20"
+  ADMIN_ACCESS_CODE = "QIMMAH-ADMIN-2026"
+  JWT_SECRET = "alqimmah-verbal-aptitude-jwt-secret-secure-2026-edition"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

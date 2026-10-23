@@ -1,0 +1,33 @@
+{
+  "name": "al-qimmah-verbal-aptitude",
+  "version": "1.0.0",
+  "description": "منصة القمة في القدرات اللفظية - الأستاذ جابر القاضي",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "build": "echo 'Build complete'",
+    "vercel-build": "echo 'Vercel build complete'"
+  },
+  "keywords": [
+    "قدرات",
+    "لفظي",
+    "جابر-القاضي",
+    "تعليم",
+    "اختبارات"
+  ],
+  "author": "الأستاذ جابر القاضي",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.5.0",
+    "pdf-parse": "^2.4.5",
+    "serverless-http": "^4.0.0",
+    "uuid": "^14.0.3",
+    "xlsx": "^0.18.5"
+  }
+}
